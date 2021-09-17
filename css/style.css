@@ -8,6 +8,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .container{
@@ -16,7 +17,6 @@ body{
     align-items: center;
     padding: 0 6rem;
     height: 100%;
-    border: 2px red solid;
     position: relative;
 }
 
@@ -27,13 +27,19 @@ body{
 
 .title{
     color: hsl(300, 43%, 22%);
-    width: 45%;
-    border: 2px solid red;
-   
+    width: 45%;  
 }
 
 .title__description{
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 3rem;
+}
+
+.title__continue-description{
+    color: hsl(300, 43%, 22%);
+    font-weight: normal;
+    line-height: 1.5rem;
+    margin-top: 1rem;
 }
 
 .rated{
@@ -43,13 +49,32 @@ body{
 }
 
 .quote{
-    border: solid red 2px;
     display: flex;
     align-self: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
-    width: 80%;
-    margin-top: 20rem;
-  
+    margin-top: 27rem;
+    height: 13rem;
+    width: 90%;
+    
 }
+
+.quote :nth-child(1){
+    align-self: flex-start;
+}
+
+.quote :nth-child(3){
+    align-self: flex-end;
+}
+
+.quote__card{
+    background: hsl(300, 43%, 22%);
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    height: 8rem;
+    width: 22rem;
+    padding: 2rem;
+}
+
 
