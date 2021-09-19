@@ -141,18 +141,17 @@ body{
 
     .rated{
         margin-top: 4rem;
-        position: inherit;
-        border: 2px red solid;
-   
+        position: inherit;   
     }
 
     .quote{
+        display: flex;
         flex-wrap: wrap;
-        border: 2px red solid;
-        position: inherit; 
-        float: right;     
+        position: absolute;
+        margin-top: 80rem;
+        height: 40rem;
+        width: 25rem;
     }
-    
 
     .quote :nth-child(1){
         align-self: inherit;
@@ -163,22 +162,12 @@ body{
     }
 
     .quote__card{
-        margin-top: 1rem;
-        position: inherit;
+        margin-top: .5rem;
     }
 
-    .quote{
-        display: flex;
-        align-self: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: inherit;
-        margin-top: 50rem;
-        height: 50rem;
-        width: 25rem;
-    
-    }
+   
 
+ 
 
 }
 
